@@ -155,7 +155,7 @@ else:
     bb_container = st.container()
     with bb_container:
         # Calculate Bollinger Bands
-        st.header('Bolling Bands')
+        st.header('Bollinger Bands')
         period = st.slider("Select Bollinger Bands period", min_value=10, max_value=50, value=20, step=1)
         std_dev = st.slider("Select Standard Deviation", min_value=1, max_value=5, value=2, step=1)
         bb = ta.volatility.BollingerBands(data['Close'], window=period, window_dev=std_dev)
