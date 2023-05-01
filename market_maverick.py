@@ -38,8 +38,9 @@ tickers.sort()
 st.set_page_config(
     page_title='The Market Maverick',
     page_icon=':money_with_wings:',
-    initial_sidebar_state="expanded",
-)
+    initial_sidebar_state="auto",
+    )
+
 
 # Set the Header and Sub Header for the Dashboard
 st.title('The Market Maverick')
